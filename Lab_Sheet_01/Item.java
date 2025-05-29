@@ -12,7 +12,7 @@ class Item{
     }
 
     void PrintDetails(){
-        System.out.println("Description of the Item: "+description+" Name of the Item: "+name+" Price of unit: "+unitPrice+" Available Quantity: "+quantityAvailabale);
+        System.out.println("Description of the Item: "+description+" Name of the Item: "+name+" Price of unit: "+unitPrice+" Available Quantity: "+quantityAvailable);
     }
 }
 
