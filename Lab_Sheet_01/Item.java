@@ -10,6 +10,10 @@ class Item{
         this.unitPrice=unitPrice;
         this.quantityAvailable=quantityAvailable;
     }
+
+    void PrintDetails(){
+        System.out.println("Description of the Item: "+description+" Name of the Item: "+name+" Price of unit: "+unitPrice+" Available Quantity: "+quantityAvailabale);
+    }
 }
 
 class Customer{
