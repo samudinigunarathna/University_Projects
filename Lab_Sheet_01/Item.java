@@ -1,3 +1,4 @@
+import java.util.*;
 class Item{
     private String description;
     private String name;
@@ -22,13 +23,16 @@ class Customer{
 }
 
 class DataBase{
-    ArrayList<Item>Items=new ArrayList<>();
-    ArrayList<Customer>Customers=new ArrayList<>();
+    ArrayList<Item> items=new ArrayList<>();
+    ArrayList<Customer> customers=new ArrayList<>();
 
 }
 
 class App{
     public static void main(String[] args){
+        Scanner sc=new Scanner();
+        Item item=new Item();
+
         System.out.println("-----Inventory Management-----");
         System.out.println("1.Add Item");
         System.out.println("2.Remove Item");
@@ -40,5 +44,14 @@ class App{
         System.out.println("0.Exit");
         System.out.println("----------------------------");
         System.out.println("Enter Your Choice");
+
+        String input=sc.nextLine();
+
+        switch(input){
+            case "1":
+            System.out.println("Enter the item name: ");
+            sc.nextLine();
+            item.PrintDetails();
+        }
     }
 }
